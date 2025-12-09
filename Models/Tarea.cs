@@ -13,8 +13,9 @@ namespace ExamenParcial2_Progra3.Models
 
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
         public DateTime? FechaLimite { get; set; }
-
-        public int Dificultad { get; set; }
+        [Required]
+        public int DificultadId {get; set; }
+        public Dificultad Dificultad { get; set; }
         public double TiempoEstimadoHoras { get; set; }
 
         // FK EstadoTarea
