@@ -121,7 +121,6 @@ namespace ExamenParcial2_Progra3.Controllers
                 return NotFound();
             }
 
-           
                 try
                 {
                     _context.Update(meta);

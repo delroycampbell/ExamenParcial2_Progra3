@@ -46,6 +46,7 @@ namespace ExamenParcial2_Progra3.Controllers
         // GET: DificultadTareas/Create
         public IActionResult Create()
         {
+
             return View();
         }
 

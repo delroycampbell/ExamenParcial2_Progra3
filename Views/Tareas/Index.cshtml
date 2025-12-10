@@ -16,16 +16,16 @@
                 @Html.DisplayNameFor(model => model.Descripcion)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FechaCreacion)
+                Fecha Creacion
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FechaLimite)
+                Fecha Limite
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Dificultad)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TiempoEstimadoHoras)
+                Tiempo Estimado Horas
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estado)
@@ -49,7 +49,7 @@
                 @Html.DisplayFor(modelItem => item.FechaLimite)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Dificultad)
+                @Html.DisplayFor(modelItem => item.Dificultad.Nombre)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TiempoEstimadoHoras)

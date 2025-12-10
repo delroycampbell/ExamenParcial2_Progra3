@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Edit";
-}
+    }
 
 <h1>Edit</h1>
 
@@ -18,33 +18,34 @@
                 <input asp-for="Descripcion" class="form-control" />
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            @* <div class="form-group">
                 <label asp-for="FechaCreacion" class="control-label"></label>
                 <input asp-for="FechaCreacion" class="form-control" />
                 <span asp-validation-for="FechaCreacion" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
-                <label asp-for="FechaLimite" class="control-label"></label>
+                <label asp-for="FechaLimite" class="control-label">Fecha Limite</label>
                 <input asp-for="FechaLimite" class="form-control" />
                 <span asp-validation-for="FechaLimite" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Dificultad" class="control-label"></label>
-                <input asp-for="Dificultad" class="form-control" />
-                <span asp-validation-for="Dificultad" class="text-danger"></span>
+                <label asp-for="DificultadId" class="control-label">Dificultad</label>
+                <select asp-for="DificultadId" class="form-control" asp-items="ViewBag.DificultadId"></select>
+                <span asp-validation-for="DificultadId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="TiempoEstimadoHoras" class="control-label"></label>
+                <label asp-for="TiempoEstimadoHoras" class="control-label">Tiempo Estimado Horas</label>
                 <input asp-for="TiempoEstimadoHoras" class="form-control" />
                 <span asp-validation-for="TiempoEstimadoHoras" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EstadoTareaId" class="control-label"></label>
+                <label asp-for="EstadoTareaId" class="control-label">Estado Tarea</label>
                 <select asp-for="EstadoTareaId" class="form-control" asp-items="ViewBag.EstadoTareaId"></select>
                 <span asp-validation-for="EstadoTareaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MetaId" class="control-label"></label>
+                <label asp-for="MetaId" class="control-label">Meta</label>
                 <select asp-for="MetaId" class="form-control" asp-items="ViewBag.MetaId"></select>
                 <span asp-validation-for="MetaId" class="text-danger"></span>
             </div>
@@ -59,6 +60,8 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
