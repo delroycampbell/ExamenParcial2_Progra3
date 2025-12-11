@@ -31,22 +31,22 @@
             <input type="hidden" asp-for="FechaCreacion" />
 
             <div class="form-group">
-                <label asp-for="FechaLimite" class="control-label"></label>
+                <label asp-for="FechaLimite" class="control-label">Fecha Limite</label>
                 <input asp-for="FechaLimite" class="form-control" />
                 <span asp-validation-for="FechaLimite" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoriaMetaId" class="control-label"></label>
+                <label asp-for="CategoriaMetaId" class="control-label">Categoria Meta</label>
                 <select asp-for="CategoriaMetaId" class="form-control" asp-items="ViewBag.CategoriaMetaId"></select>
                 <span asp-validation-for="CategoriaMetaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrioridadMetaId" class="control-label"></label>
+                <label asp-for="PrioridadMetaId" class="control-label">Prioridad Meta</label>
                 <select asp-for="PrioridadMetaId" class="form-control" asp-items="ViewBag.PrioridadMetaId"></select>
                 <span asp-validation-for="PrioridadMetaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EstadoMetaId" class="control-label"></label>
+                <label asp-for="EstadoMetaId" class="control-label">Estado Meta</label>
                 <select asp-for="EstadoMetaId" class="form-control" asp-items="ViewBag.EstadoMetaId"></select>
                 <span asp-validation-for="EstadoMetaId" class="text-danger"></span>
             </div>
